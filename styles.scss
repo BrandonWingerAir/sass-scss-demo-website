@@ -1,10 +1,68 @@
+$text-alignment: center;
+$paragraph-padding: 1.5%;
+
 body {
-  background: #111;
+  background: #fafafa;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
+  color: #212121;
 }
 
 h1 {
   color: burlywood;
   font-size: 2.5rem;
+  text-align: $text-alignment;
+
+  span {
+    color: bisque;
+  }
+
+  .line {
+    font-weight: 300;
+    color: #a3a3a3;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      position: relative;
+  
+      a {
+        color: #737373;
+        display: block;
+        padding: 8px 12px;
+        border-radius: 5%;
+        text-decoration: none;
+
+        &:hover, &:focus {
+          transition: 1s linear;
+          background: #525252;
+          color: #fafafa;
+        }
+
+        &:active {
+          background: bisque;
+          border-color: #666;
+          color: #efefef;
+        }
+      }
+    }
+  }
+}
+
+article {
+  width: 75%;
+  margin: 0 auto 35px;
+  
+  p {
+    padding-bottom: $paragraph-padding;
+  }
 }

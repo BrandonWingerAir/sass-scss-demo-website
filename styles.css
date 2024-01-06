@@ -1,10 +1,57 @@
 body {
-  background: #111;
+  background: #fafafa;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
+  color: #212121;
 }
 
 h1 {
   color: burlywood;
   font-size: 2.5rem;
+  text-align: center;
+}
+h1 span {
+  color: bisque;
+}
+h1 .line {
+  font-weight: 300;
+  color: #a3a3a3;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+nav ul li a {
+  color: #737373;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 5%;
+  text-decoration: none;
+}
+nav ul li a:hover, nav ul li a:focus {
+  transition: 1s linear;
+  background: #525252;
+  color: #fafafa;
+}
+nav ul li a:active {
+  background: bisque;
+  border-color: #666;
+  color: #efefef;
+}
+
+article {
+  width: 75%;
+  margin: 0 auto 35px;
+}
+article p {
+  padding-bottom: 1.5%;
 }/*# sourceMappingURL=styles.css.map */
