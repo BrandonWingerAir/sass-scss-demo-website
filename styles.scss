@@ -5,27 +5,55 @@ body {
   background: #fafafa;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #212121;
-}
+  margin: 0;
 
-h1 {
-  color: burlywood;
-  font-size: 2.5rem;
-  text-align: $text-alignment;
-
-  span {
-    color: bisque;
+  hr {
+    margin-bottom: 21px;
+    border-top: 0;
+    border-color: #d4d4d4;
   }
 
-  .line {
-    font-weight: 300;
-    color: #a3a3a3;
+  a {
+    color: #212121;
+  }
+
+  input[type="submit"]:hover {
+    cursor: pointer;
+  }
+}
+
+header {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 25px 0 30px;
+  border-bottom: 2px solid #a3a3a3;
+  background: #fff;
+  
+  h1 {
+    color: burlywood;
+    font-size: 2.5rem;
+    text-align: $text-alignment;
+    margin: 0;
+  
+    span {
+      color: bisque;
+    }
+
+    .logo-slash {
+      font-weight: 300;
+      color: #404040;
+    }
+
+    .logo-text-gray {
+      color: #94a3b8;
+    }
   }
 }
 
 nav {
   display: flex;
   justify-content: center;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
 
   ul {
     list-style: none;
@@ -58,11 +86,78 @@ nav {
   }
 }
 
+
+#page-title {
+  display: flex;
+
+  h2 {
+    display: inline-block;
+    margin: 0 auto 42px;
+    font-size: 2rem;
+    text-align: center;
+    color: #0891b2;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #d4d4d4;
+  }
+}
+
 article {
-  width: 75%;
+  box-sizing: border-box;
+  width: 80%;
+  padding: 22px 40px;
   margin: 0 auto 35px;
+  background-color: white;
+  border: 2px solid #cbd5e1;
+  background-color: #fff;
+  border-radius: 3px;
   
   p {
     padding-bottom: $paragraph-padding;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+}
+
+section {
+  padding: 0 30px;
+}
+
+form {
+  max-width: 500px;
+  padding: 2rem 10px;
+  box-sizing: border-box;
+  margin: auto;
+  border: 1px solid #cbd5e1;
+  background-color: #fff;
+
+  div {
+    display: flex;
+    margin: 0 0 1rem 0;
+
+    label, input {
+      width: 60%;
+      padding: 0.5rem;
+      box-sizing: border-box;
+      justify-content: space-between;
+      font-size: 1.1rem;
+    }
+
+    label {
+      // width: 25%;
+      text-align: right;
+      width: 30%;
+    }
+
+    input {
+      // width: 75%;
+      border: 2px solid #e2e8f0;
+      border-radius: 2px;
+    }
+
+    &:last-of-type input {
+      margin: 10px auto 0;
+    }
   }
 }
