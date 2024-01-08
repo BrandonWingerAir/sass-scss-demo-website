@@ -1,10 +1,13 @@
-$text-alignment: center;
-$paragraph-padding: 4px;
+$text-color: #212121;
+$secondary-color: #fafafa;
+$bg-color: white;
+$border-color: #cbd5e1;
+$divider-color: #d4d4d4;
 
 body {
-  background: #fafafa;
+  background: $secondary-color;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #212121;
+  color: $text-color;
   margin: 0;
 
   h3 {
@@ -12,7 +15,7 @@ body {
   }
 
   a {
-    color: #212121;
+    color: $text-color;
   }
 
   input[type="submit"]:hover {
@@ -25,12 +28,12 @@ header {
   margin-bottom: 10px;
   padding: 25px 0 30px;
   border-bottom: 2px solid #a3a3a3;
-  background: #fff;
+  background: $bg-color;
   
   h1 {
     color: #bf4080;
     font-size: 2.5rem;
-    text-align: $text-alignment;
+    text-align: center;
     margin: 0;
   
     span {
@@ -55,7 +58,7 @@ nav {
   
   div {
     padding: 0 20px 10px;
-    border-bottom: 1px solid #d4d4d4;
+    border-bottom: 1px solid $divider-color;
 
     ul {
       list-style: none;
@@ -75,7 +78,7 @@ nav {
           &:hover, &:focus {
             transition: 1s linear;
             background: #525252;
-            color: #fafafa;
+            color: $secondary-color;
           }
   
           &:active {
@@ -100,7 +103,7 @@ nav {
     text-align: center;
     color: #0891b2;
     padding: 0 30px 32px;
-    border-bottom: 1px solid #d4d4d4;
+    border-bottom: 1px solid $divider-color;
   }
 }
 
@@ -109,13 +112,13 @@ article {
   width: 80%;
   padding: 22px 40px;
   margin: 0 auto 35px;
-  background-color: white;
-  border: 2px solid #cbd5e1;
-  background-color: #fff;
+  background-color: $bg-color;
+  border: 2px solid $border-color;
+  background-color: $bg-color;
   border-radius: 3px;
   
   p {
-    padding-bottom: $paragraph-padding;
+    padding-bottom: 4px;
 
     &:last-of-type {
       padding-bottom: 0;
@@ -145,8 +148,8 @@ form {
   padding: 45px 0;
   box-sizing: border-box;
   margin: auto;
-  border: 1px solid #cbd5e1;
-  background-color: #fff;
+  border: 1px solid $border-color;
+  background-color: $bg-color;
 
   div {
     display: flex;

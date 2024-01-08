@@ -19,7 +19,7 @@ header {
   margin-bottom: 10px;
   padding: 25px 0 30px;
   border-bottom: 2px solid #a3a3a3;
-  background: #fff;
+  background: white;
 }
 header h1 {
   color: #bf4080;
@@ -93,7 +93,7 @@ article {
   margin: 0 auto 35px;
   background-color: white;
   border: 2px solid #cbd5e1;
-  background-color: #fff;
+  background-color: white;
   border-radius: 3px;
 }
 article p {
@@ -122,7 +122,7 @@ form {
   box-sizing: border-box;
   margin: auto;
   border: 1px solid #cbd5e1;
-  background-color: #fff;
+  background-color: white;
 }
 form div {
   display: flex;
