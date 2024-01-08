@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCSS - Demo Website | Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>S<span>CSS</span> <span class="logo-slash">/</span> <span class="logo-text-gray">Demo</span></h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="#!">Differences</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <hr width="280">
+  <section id="page-title">
+    <h2>Syntax Differences</h2>
+  </section>
+
+  <article>
+    <h3>SCSS vs. Sass ↔️</h3>
+    <p>
+      SCSS and Sass are two syntax flavors for the same concept. The difference between them is UI.
+    </p>
+
+    <h4>
+      .scss extension
+    </h4>
+    <ul>
+      <li>Any valid CSS is valid SCSS</li>
+    </ul>
+    <h4>
+      .sass extension
+    </h4>
+    <ul>
+      <li>CSS code cannot be used as SASS</li>
+    </ul>
+    
+    <hr width="240">
+
+    <p>
+      Here’s an example of SCSS:
+    </p>
+
+    <code>
+      body {
+        background-color:#000;
+        color:#fff;
+      }
+    </code>
+    
+    <p>Below is an example of Sass.</p>
+
+    <code>
+      body
+        background-color:#000;
+        color:#fff;
+    </code>
+
+    <p>
+      It’s up to you to choose one. Don’t stress on the decision — you can easily convert SCSS to Sass and vice versa with the sass-convert tool.
+    </p>
+    <p>- Source: <a href="https://blog.logrocket.com/the-definitive-guide-to-scss/" target="_blank">LogRocket (Blog)</a></p>
+  </article>
+</body>
+</html>
