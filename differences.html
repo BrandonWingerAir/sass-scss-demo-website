@@ -26,7 +26,7 @@
     <h2>Differences</h2>
   </section>
 
-  <article>
+  <article id="differences-content">
     <h3>SCSS vs. Sass ↔️</h3>
     <p>
       SCSS and Sass are two syntax flavors for the same concept. The difference between them is UI.
@@ -47,24 +47,28 @@
     
     <hr width="240">
 
+    <h4>Here’s an example of SCSS:</h4>
+
     <p>
-      Here’s an example of SCSS:
+      <code>
+        body {<br>
+          &nbsp;&nbsp;background-color:#000;<br>
+          &nbsp;&nbsp;color:#fff;<br>
+        }
+      </code>
+    </p>
+    
+    <h4>Below is an example of Sass.</h4>
+
+    <p>
+      <code>
+        body<br>
+          &nbsp;&nbsp;background-color:#000;<br>
+          &nbsp;&nbsp;color:#fff;
+      </code>
     </p>
 
-    <code>
-      body {
-        background-color:#000;
-        color:#fff;
-      }
-    </code>
-    
-    <p>Below is an example of Sass.</p>
-
-    <code>
-      body
-        background-color:#000;
-        color:#fff;
-    </code>
+    <hr width="240">
 
     <p>
       It’s up to you to choose one. Don’t stress on the decision — you can easily convert SCSS to Sass and vice versa with the sass-convert tool.
