@@ -71,6 +71,9 @@ header h1 .logo-text-gray {
   background: linear-gradient(90deg, #0891b2 98%, #fafafa 100%);
   gap: 15px;
 }
+.sidebar-container .sidebar_header:hover {
+  background: linear-gradient(90deg, #06b6d4 98%, #fafafa 100%);
+}
 .sidebar-container .sidebar_header_title h5 {
   color: white;
   font-weight: 600;
@@ -113,7 +116,7 @@ header h1 .logo-text-gray {
   }
 }
 .sidebar-container .sidebar_list_item:hover {
-  background: dodgerblue;
+  background: #0891b2;
 }
 @media only screen and (max-width: 620px) {
   .sidebar-container .sidebar_list {
@@ -196,7 +199,6 @@ nav div ul li a:active {
 @media only screen and (max-width: 400px) {
   nav div ul li a {
     font-size: 14px;
-    font-weight: 600;
   }
 }
 @media only screen and (max-width: 560px) {
@@ -283,6 +285,9 @@ form div {
   display: flex;
   margin-bottom: 30px;
 }
+form div svg {
+  margin: 0 auto;
+}
 form div label, form div input {
   padding: 0.5rem;
   justify-content: space-between;
@@ -332,12 +337,16 @@ form div:last-of-type input {
   font-weight: 600;
   font-size: 17px;
   text-transform: uppercase;
+  background-color: #f59e0b;
+}
+form div:last-of-type input:hover {
+  background: #d97706;
 }
 @media only screen and (max-width: 400px) {
   form div:last-of-type input {
     text-align: center;
     padding-left: 0;
-    margin-top: 20px;
+    margin-top: 0;
   }
 }
 @media only screen and (max-width: 820px) {
@@ -351,6 +360,11 @@ form div:last-of-type input {
     margin: 22px auto;
     justify-content: center;
   }
+}
+form p {
+  text-align: center;
+  margin-bottom: 28px;
+  margin-top: -1px;
 }
 @media only screen and (max-width: 560px) {
   form {
