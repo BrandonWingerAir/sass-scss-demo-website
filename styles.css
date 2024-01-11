@@ -193,6 +193,12 @@ nav div ul li a:active {
   border-color: #666;
   color: #efefef;
 }
+@media only screen and (max-width: 400px) {
+  nav div ul li a {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
 @media only screen and (max-width: 560px) {
   nav div {
     padding: 0 0 18px;
