@@ -257,6 +257,10 @@ article {
     margin: 20px 0;
     border-top: 0;
     border-color: $divider-color;
+
+    @include phoneSmallView {
+      width: 225px;
+    }
   }
 
   @include tabletView {
@@ -289,11 +293,22 @@ form {
       padding: 0.5rem;
       justify-content: space-between;
       font-size: 1.1rem;
+
+      @include phoneSmallView {
+        width: 100%;
+        text-align: left;
+        padding-left: 0;
+        margin-bottom: 4px;
+      }
     }
     
     label {
       width: 30%;
       text-align: right;
+
+      @include phoneLargeView {
+        display: none;
+      }
     }
     
     input {
@@ -301,6 +316,15 @@ form {
       margin-right: 12%;
       border: 2px solid #e2e8f0;
       border-radius: 2px;
+
+      @include phoneLargeView {
+        width: 90%;
+        margin-right: 0;
+      }
+
+      @include phoneSmallView {
+        padding-left: 8px;
+      }
     }
 
     &:last-of-type {
@@ -313,54 +337,32 @@ form {
         font-weight: 600;
         font-size: 17px;
         text-transform: uppercase;
+
+        @include phoneSmallView {
+          text-align: center;
+          padding-left: 0;
+          margin-top: 20px;
+        }
       }
     }
 
     @include tabletView {
       max-width: 380px;
     }
+
+    @include phoneLargeView {
+      max-width: 300px;
+      margin: 22px auto;
+      justify-content: center;
+    }
   }
 
   @include phoneLargeView {
-    width: 360px;
-
-    div input {
-      margin-right: 0;
-      width: 65%;
-    }
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  article hr {
-    width: 225px;
+    width: 100%;
+    padding: 5px 25px 25px;
   }
 
-  form {
+  @include phoneSmallView {
     padding: 22px 10px 38px;
-    width: 320px;
-
-    div {
-      flex-wrap: wrap;
-      margin: 0 auto;
-      width: 80%;
-  
-      label, input {
-        width: 100%;
-        text-align: left;
-        padding-left: 0;
-        margin-bottom: 4px;
-      }
-
-      input {
-        padding-left: 8px;
-      }
-  
-      &:last-of-type input {
-        text-align: center;
-        padding-left: 0;
-        margin-top: 20px;
-      }
-    }
   }
 }
