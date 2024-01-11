@@ -11,64 +11,157 @@
     <h1>S<span>CSS</span> <span class="logo-slash">/</span> <span class="logo-text-gray">Demo</span></h1>
   </header>
 
-  <nav>
-    <div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="differences.html">Differences</a></li>
-        <li><a href="login.html">Login</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <div class="sidebar_header">
+        <div class="sidebar_header_logo">
+          <img src="/images/logo.svg" alt="">
+        </div>
+        <div class="sidebar_header_title">
+          <h5>SCSS / Demo</h5>
+        </div>
+      </div>
 
-  <section id="page-title">
-    <h2>Features</h2>
-  </section>
-
-  <article>
-    <h3>CSS Variables 🎨</h3>
-    <p>
-      Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you’ll want to reuse.
-    </p>
-    <p>- Source: <a href="https://sass-lang.com/guide/#variables" target="_blank">Official Guide</a></p>
-
-    <hr>
-
-    <h3>Nesting 🪹</h3>
-    <p>
-      Rather than repeating the same selectors over and over again, you can write one style rule(s) inside another. Sass will automatically combine the outer rule’s selector with the inner rule’s.
-    </p>
-    <p>- Source: <a href="https://sass-lang.com/documentation/style-rules/" target="_blank">Official Documentation</a></p>
-
-    <hr>
-
-    <h3>Modules 🔩</h3>
-    <p>
-      You don’t have to write all your Sass in a single file. You can split it up however you want with the @use rule. This rule loads another Sass file as a module, which means you can refer to its variables, mixins, and functions in your Sass file with a namespace based on the filename. Using a file will also include the CSS it generates in your compiled output!
-    </p>
-    <p>- Source: <a href="https://sass-lang.com/guide/#modules" target="_blank">Official Guide</a></p>
-
-    <hr>
-
-    <h3>Mixins 🗂️</h3>
-    <p>
-      Mixins allow you to define styles that can be re-used throughout your stylesheet. They make it easy to avoid using non-semantic classes like .float-left, and to distribute collections of styles in libraries.
-    </p>
-    <p>- Source: <a href="https://sass-lang.com/documentation/at-rules/mixin/" target="_blank">Official Documentation</a></p>
-
-    <hr>
+      <div class="sidebar_list">
+        <div class="sidebar_list_item">
+          <a href="index.html">
+            <div class="sidebar_list_item_img">
+              <img src="/images/house.svg" alt="">
+            </div>
+            <div class="sidebar_list_item_title">
+              Home
+            </div>
+          </a>
+        </div>
+        <div class="sidebar_list_item">
+          <a href="#!">
+            <div class="sidebar_list_item_img">
+              <img src="/images/list.svg" alt="">
+            </div>
+            <div class="sidebar_list_item_title">
+              Features
+            </div>
+          </a>
+        </div>
+        <div class="sidebar_list_item">
+          <a href="differences.html">
+            <div class="sidebar_list_item_img">
+              <img src="/images/differences.svg" alt="">
+            </div>
+            <div class="sidebar_list_item_title">
+              Differences
+            </div>
+          </a>
+        </div>
+        <div class="sidebar_list_item">
+          <a href="login.html">
+            <div class="sidebar_list_item_img">
+              <svg fill="#ffffff" version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="20" height="20"
+      viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                <metadata>
+                  <sfw  xmlns="&ns_sfw;">
+                    <slices>
   
-    <h3>Extends 🔗</h3>
-    <p>
-      There are often cases when designing a page when one class should have all the styles of another class, as well as its own specific styles. For example, the BEM methodology encourages modifier classes that go on the same elements as block or element classes. But this can create cluttered HTML, it’s prone to errors from forgetting to include both classes, and it can bring non-semantic style concerns into your markup.
-    </p>
-    <p>
-      Sass’s @extend rule solves this. It’s written @extend &lt;selector&gt;, and it tells Sass that one selector should inherit the styles of another.
-    </p>
-    <p>- Source: <a href="https://sass-lang.com/documentation/at-rules/extend/" target="_blank">Official Documentation</a></p>
-  </article>
+                </slices>
+                    <sliceSourceBounds  width="505" height="984" bottomLeftOrigin="true" x="0" y="-552">
+  
+                </sliceSourceBounds>
+                  </sfw>
+                </metadata>
+                <g>
+                  <g>
+                    <g>
+                      <path d="M22,6H2C0.9,6,0,5.1,0,4V2c0-1.1,0.9-2,2-2h20c1.1,0,2,0.9,2,2v2C24,5.1,23.1,6,22,6z M22,4v1V4L22,4L22,4z M2,2v2h20
+                        l0-2H2z"/>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M22,15H2c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h20c1.1,0,2,0.9,2,2v2C24,14.1,23.1,15,22,15z M22,13v1V13L22,13L22,13z
+                        M2,11v2h20l0-2H2z"/>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M11,23H2c-0.5,0-1-0.5-1-1v-2c0-0.5,0.5-1,1-1h9c0.6,0,1,0.5,1,1v2C12,22.5,11.6,23,11,23z"/>
+                    </g>
+                    <g>
+                      <path d="M11,24H2c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h9c1.1,0,2,0.9,2,2v2C13,23.1,12.1,24,11,24z M11,22v1V22L11,22L11,22z
+                        M2,20v2h9l0-2H2z"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="sidebar_list_item_title">
+              Login
+            </div>
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  </article>
+  <div class="page-content">  
+    <nav>
+      <div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="differences.html">Differences</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <section id="page-title">
+      <h2>Features</h2>
+    </section>
+  
+    <article>
+      <h3>CSS Variables 🎨</h3>
+      <p>
+        Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you’ll want to reuse.
+      </p>
+      <p>- Source: <a href="https://sass-lang.com/guide/#variables" target="_blank">Official Guide</a></p>
+  
+      <hr>
+  
+      <h3>Nesting 🪹</h3>
+      <p>
+        Rather than repeating the same selectors over and over again, you can write one style rule(s) inside another. Sass will automatically combine the outer rule’s selector with the inner rule’s.
+      </p>
+      <p>- Source: <a href="https://sass-lang.com/documentation/style-rules/" target="_blank">Official Documentation</a></p>
+  
+      <hr>
+  
+      <h3>Modules 🔩</h3>
+      <p>
+        You don’t have to write all your Sass in a single file. You can split it up however you want with the @use rule. This rule loads another Sass file as a module, which means you can refer to its variables, mixins, and functions in your Sass file with a namespace based on the filename. Using a file will also include the CSS it generates in your compiled output!
+      </p>
+      <p>- Source: <a href="https://sass-lang.com/guide/#modules" target="_blank">Official Guide</a></p>
+  
+      <hr>
+  
+      <h3>Mixins 🗂️</h3>
+      <p>
+        Mixins allow you to define styles that can be re-used throughout your stylesheet. They make it easy to avoid using non-semantic classes like .float-left, and to distribute collections of styles in libraries.
+      </p>
+      <p>- Source: <a href="https://sass-lang.com/documentation/at-rules/mixin/" target="_blank">Official Documentation</a></p>
+  
+      <hr>
+    
+      <h3>Extends 🔗</h3>
+      <p>
+        There are often cases when designing a page when one class should have all the styles of another class, as well as its own specific styles. For example, the BEM methodology encourages modifier classes that go on the same elements as block or element classes. But this can create cluttered HTML, it’s prone to errors from forgetting to include both classes, and it can bring non-semantic style concerns into your markup.
+      </p>
+      <p>
+        Sass’s @extend rule solves this. It’s written @extend &lt;selector&gt;, and it tells Sass that one selector should inherit the styles of another.
+      </p>
+      <p>- Source: <a href="https://sass-lang.com/documentation/at-rules/extend/" target="_blank">Official Documentation</a></p>
+    </article>
+  </div>
 </body>
 </html>

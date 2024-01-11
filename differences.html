@@ -11,69 +11,165 @@
     <h1>S<span>CSS</span> <span class="logo-slash">/</span> <span class="logo-text-gray">Demo</span></h1>
   </header>
 
-  <nav>
-    <div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="#!">Differences</a></li>
-        <li><a href="login.html">Login</a></li>
-      </ul>
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <div class="sidebar_header">
+        <div class="sidebar_header_logo">
+          <img src="/images/logo.svg" alt="">
+        </div>
+        <div class="sidebar_header_title">
+          <h5>SCSS / Demo</h5>
+        </div>
+      </div>
+
+      <div class="sidebar_list">
+        <div class="sidebar_list_item">
+          <a href="index.html">
+            <div class="sidebar_list_item_img">
+              <img src="/images/house.svg" alt="">
+            </div>
+            <div class="sidebar_list_item_title">
+              Home
+            </div>
+          </a>
+        </div>
+        <div class="sidebar_list_item">
+          <a href="features.html">
+            <div class="sidebar_list_item_img">
+              <img src="/images/list.svg" alt="">
+            </div>
+            <div class="sidebar_list_item_title">
+              Features
+            </div>
+          </a>
+        </div>
+        <div class="sidebar_list_item">
+          <a href="#!">
+            <div class="sidebar_list_item_img">
+              <img src="/images/differences.svg" alt="">
+            </div>
+            <div class="sidebar_list_item_title">
+              Differences
+            </div>
+          </a>
+        </div>
+        <div class="sidebar_list_item">
+          <a href="login.html">
+            <div class="sidebar_list_item_img">
+              <svg fill="#ffffff" version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="20" height="20"
+      viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                <metadata>
+                  <sfw  xmlns="&ns_sfw;">
+                    <slices>
+  
+                </slices>
+                    <sliceSourceBounds  width="505" height="984" bottomLeftOrigin="true" x="0" y="-552">
+  
+                </sliceSourceBounds>
+                  </sfw>
+                </metadata>
+                <g>
+                  <g>
+                    <g>
+                      <path d="M22,6H2C0.9,6,0,5.1,0,4V2c0-1.1,0.9-2,2-2h20c1.1,0,2,0.9,2,2v2C24,5.1,23.1,6,22,6z M22,4v1V4L22,4L22,4z M2,2v2h20
+                        l0-2H2z"/>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M22,15H2c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h20c1.1,0,2,0.9,2,2v2C24,14.1,23.1,15,22,15z M22,13v1V13L22,13L22,13z
+                        M2,11v2h20l0-2H2z"/>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M11,23H2c-0.5,0-1-0.5-1-1v-2c0-0.5,0.5-1,1-1h9c0.6,0,1,0.5,1,1v2C12,22.5,11.6,23,11,23z"/>
+                    </g>
+                    <g>
+                      <path d="M11,24H2c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h9c1.1,0,2,0.9,2,2v2C13,23.1,12.1,24,11,24z M11,22v1V22L11,22L11,22z
+                        M2,20v2h9l0-2H2z"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="sidebar_list_item_title">
+              Login
+            </div>
+          </a>
+        </div>
+        </div>
+      </div>
     </div>
-  </nav>
+  </div>
 
-  <section id="page-title">
-    <h2>Differences</h2>
-  </section>
+  <div class="page-content">
+    <nav>
+      <div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="#!">Differences</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <section id="page-title">
+      <h2>Differences</h2>
+    </section>
+  
+    <article id="differences-content">
+      <h3>SCSS vs. Sass ↔️</h3>
+      <p>
+        SCSS and Sass are two syntax flavors for the same concept. The difference between them is UI.
+      </p>
+  
+      <h4>
+        .scss extension
+      </h4>
+      <ul>
+        <li>Any valid CSS is valid SCSS</li>
+      </ul>
+      <h4>
+        .sass extension
+      </h4>
+      <ul>
+        <li>CSS code cannot be used as SASS</li>
+      </ul>
+      
+      <hr width="240">
+  
+      <h4>Here’s an example of SCSS:</h4>
+  
+      <p>
+        <code>
+          body {<br>
+            &nbsp;&nbsp;background-color:#000;<br>
+            &nbsp;&nbsp;color:#fff;<br>
+          }
+        </code>
+      </p>
+      
+      <h4>Below is an example of Sass.</h4>
+  
+      <p>
+        <code>
+          body<br>
+            &nbsp;&nbsp;background-color:#000;<br>
+            &nbsp;&nbsp;color:#fff;
+        </code>
+      </p>
+  
+      <hr width="240">
+  
+      <p>
+        It’s up to you to choose one. Don’t stress on the decision — you can easily convert SCSS to Sass and vice versa with the sass-convert tool.
+      </p>
+      <p>- Source: <a href="https://blog.logrocket.com/the-definitive-guide-to-scss/" target="_blank">LogRocket (Blog)</a></p>
+    </article>
+  </div>
 
-  <article id="differences-content">
-    <h3>SCSS vs. Sass ↔️</h3>
-    <p>
-      SCSS and Sass are two syntax flavors for the same concept. The difference between them is UI.
-    </p>
-
-    <h4>
-      .scss extension
-    </h4>
-    <ul>
-      <li>Any valid CSS is valid SCSS</li>
-    </ul>
-    <h4>
-      .sass extension
-    </h4>
-    <ul>
-      <li>CSS code cannot be used as SASS</li>
-    </ul>
-    
-    <hr width="240">
-
-    <h4>Here’s an example of SCSS:</h4>
-
-    <p>
-      <code>
-        body {<br>
-          &nbsp;&nbsp;background-color:#000;<br>
-          &nbsp;&nbsp;color:#fff;<br>
-        }
-      </code>
-    </p>
-    
-    <h4>Below is an example of Sass.</h4>
-
-    <p>
-      <code>
-        body<br>
-          &nbsp;&nbsp;background-color:#000;<br>
-          &nbsp;&nbsp;color:#fff;
-      </code>
-    </p>
-
-    <hr width="240">
-
-    <p>
-      It’s up to you to choose one. Don’t stress on the decision — you can easily convert SCSS to Sass and vice versa with the sass-convert tool.
-    </p>
-    <p>- Source: <a href="https://blog.logrocket.com/the-definitive-guide-to-scss/" target="_blank">LogRocket (Blog)</a></p>
-  </article>
 </body>
 </html>

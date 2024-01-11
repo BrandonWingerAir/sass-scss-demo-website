@@ -24,10 +24,14 @@ body input[type=submit]:hover {
 }
 
 header {
-  margin-bottom: 10px;
   padding: 25px 0 30px;
   border-bottom: 2px solid #a3a3a3;
   background: white;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  height: 120px;
+  width: 100vw;
 }
 header h1 {
   color: #bf4080;
@@ -45,10 +49,64 @@ header h1 .logo-text-gray {
   color: #94a3b8;
 }
 
+.sidebar-container {
+  height: 100%;
+  position: fixed;
+  top: 120px;
+}
+.sidebar-container .sidebar {
+  width: 300px;
+  height: 100%;
+  background: linear-gradient(90deg, #262626 98%, #fafafa 100%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.sidebar-container .sidebar_header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  font-size: 26px;
+  text-align: center;
+  background: linear-gradient(90deg, #0891b2 98%, #fafafa 100%);
+  gap: 15px;
+}
+.sidebar-container .sidebar_header_title {
+  color: white;
+}
+.sidebar-container .sidebar_header_title h5 {
+  font-weight: 600;
+}
+.sidebar-container .sidebar_list_item {
+  display: flex;
+  padding: 18px 18px 15px;
+  gap: 10px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s ease;
+}
+.sidebar-container .sidebar_list_item a {
+  display: flex;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
+.sidebar-container .sidebar_list_item_title {
+  margin-left: 10px;
+}
+.sidebar-container .sidebar_list_item:hover {
+  background: dodgerblue;
+}
+
+.page-content {
+  margin-left: 300px;
+  margin-top: 135px;
+}
+
 nav {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 10px 0 20px;
 }
 nav div {
   padding: 0 20px 18px;
@@ -164,12 +222,32 @@ form div:last-of-type input {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 1080px) {
+  .sidebar-container .sidebar {
+    width: 250px;
+  }
+  .sidebar-container .sidebar h5 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .page-content {
+    margin-left: 250px;
+  }
+}
 @media only screen and (max-width: 820px) {
   article {
     width: 85%;
   }
   form {
     max-width: 380px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .sidebar-container {
+    display: none;
+  }
+  .page-content {
+    margin-left: 0;
   }
 }
 @media only screen and (max-width: 560px) {
